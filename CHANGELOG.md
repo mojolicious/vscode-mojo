@@ -3,5 +3,5 @@ All notable changes to the "mojolicious" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## 0.0.1
+## 1.0.0
 - Initial release
