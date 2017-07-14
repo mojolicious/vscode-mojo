@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>pl</string>
+		<string>pm</string>
+		<string>t</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>(/\*|(\{|\[|\()\s*$)</string>
+	<key>foldingStopMarker</key>
+	<string>(\*/|^\s*(\}|\]|\)))</string>
+	<key>name</key>
+	<string>Perl (Mojolicious)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>^__DATA__$\n?</string>
+			<key>end</key>
+			<string>^__END__$\n?</string>
+			<key>name</key>
+			<string>text.html.mojolicious.block</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>comment.mojolicious</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(^@@.*)</string>
+					<key>name</key>
+					<string>source.perl.mojolicious.comment</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>text.html.mojolicious</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.perl</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.perl.mojolicious</string>
+	<key>uuid</key>
+	<string>25654272-B054-445D-8B94-1D383F739ECF</string>
+</dict>
+</plist>
