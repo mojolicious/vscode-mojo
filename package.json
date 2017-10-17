@@ -2,7 +2,7 @@
     "name": "mojolicious",
     "displayName": "Mojolicious",
     "description": "VS Code support for Mojolicious Template syntax",
-    "version": "1.3.0",
+    "version": "1.7.0",
     "publisher": "kraih",
     "repository": {
         "type": "git",
@@ -70,6 +70,6 @@
         ]
     },
     "dependencies": {
-        "vsce": "^1.31.0"
+        "vsce": "^1.31.1"
     }
 }
