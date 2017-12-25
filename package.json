@@ -2,7 +2,7 @@
     "name": "mojolicious",
     "displayName": "Mojolicious",
     "description": "VS Code support for Mojolicious Template syntax",
-    "version": "1.7.0",
+    "version": "1.8.0",
     "publisher": "kraih",
     "repository": {
         "type": "git",
@@ -34,9 +34,8 @@
                     "Perl+Mojolicious"
                 ],
                 "extensions": [
-                    ".pl",
-                    ".pm",
-                    ".t"
+                    ".ep",
+                    ".epl"
                 ],
                 "configuration": "./language-configuration.json"
             },
@@ -70,6 +69,6 @@
         ]
     },
     "dependencies": {
-        "vsce": "^1.31.1"
+        "vsce": "^1.35.0"
     }
 }
