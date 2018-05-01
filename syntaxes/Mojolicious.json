@@ -1,0 +1,64 @@
+{
+  "fileTypes": [
+    "ep",
+    "epl"
+  ],
+  "uuid": "5B51EFB4-40AE-49C6-B43C-24ABF7451217",
+  "patterns": [
+    {
+      "end": "(=?%>)",
+      "begin": "(<%={,2})",
+      "beginCaptures": {
+        "0": {
+          "name": "support.begin.mojolicious"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.perl"
+        }
+      ],
+      "endCaptures": {
+        "0": {
+          "name": "support.end.mojolicious"
+        }
+      },
+      "name": "source.perl.mojolicious.block"
+    },
+    {
+      "end": "$",
+      "begin": "(?<=\\s{2})(%={,2})",
+      "beginCaptures": {
+        "0": {
+          "name": "support.begin.mojolicious"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.perl"
+        }
+      ],
+      "name": "source.perl.mojolicious.indented"
+    },
+    {
+      "end": "$",
+      "begin": "^(%={,2})",
+      "beginCaptures": {
+        "0": {
+          "name": "support.begin.mojolicious"
+        }
+      },
+      "patterns": [
+        {
+          "include": "source.perl"
+        }
+      ],
+      "name": "source.perl.mojolicious.line"
+    },
+    {
+      "include": "text.html.basic"
+    }
+  ],
+  "name": "Perl (Mojolicious Templates)",
+  "scopeName": "text.html.mojolicious"
+}

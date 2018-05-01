@@ -59,12 +59,12 @@
             {
                 "language": "perl+mojolicious",
                 "scopeName": "source.perl.mojolicious",
-                "path": "./syntaxes/Perl+Mojolicious.tmLanguage"
+                "path": "./syntaxes/Perl+Mojolicious.json"
             },
             {
                 "language": "mojolicious",
                 "scopeName": "text.html.mojolicious",
-                "path": "./syntaxes/Mojolicious.tmLanguage"
+                "path": "./syntaxes/Mojolicious.json"
             }
         ]
     },
