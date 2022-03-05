@@ -1,73 +1,75 @@
 {
-    "name": "mojolicious",
-    "displayName": "Mojolicious",
-    "description": "VS Code support for Mojolicious Template syntax",
-    "version": "1.9.0",
-    "publisher": "kraih",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kraih/vscode-mojo"
-    },
-    "engines": {
-        "vscode": "^1.5.0"
-    },
-    "license": "MIT",
-    "categories": [
-        "Languages"
-    ],
-    "keywords": [
-        "mojolicious",
-        "perl",
-        "template"
-    ],
-    "icon": "logo.png",
-    "galleryBanner": {
-        "color": "#ffffff",
-        "theme": "light"
-    },
-    "contributes": {
-        "languages": [
-            {
-                "id": "perl+mojolicious",
-                "aliases": [
-                    "Perl (Mojolicious)",
-                    "Perl+Mojolicious"
-                ],
-                "extensions": [
-                    ".ep",
-                    ".epl"
-                ],
-                "configuration": "./language-configuration.json"
-            },
-            {
-                "id": "mojolicious",
-                "aliases": [
-                    "Mojolicious",
-                    "ep",
-                    "epl"
-                ],
-                "extensions": [
-                    ".ep",
-                    ".epl",
-                    ".html.ep",
-                    ".html.epl"
-                ],
-                "configuration": "./language-configuration.json"
-            }
+  "name": "mojolicious",
+  "displayName": "Mojolicious",
+  "description": "VS Code support for Mojolicious Template syntax",
+  "version": "1.9.0",
+  "publisher": "kraih",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kraih/vscode-mojo"
+  },
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "mojolicious",
+    "perl",
+    "template"
+  ],
+  "icon": "logo.png",
+  "galleryBanner": {
+    "color": "#ffffff",
+    "theme": "light"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "perl+mojolicious",
+        "aliases": [
+          "Perl (Mojolicious)",
+          "Perl+Mojolicious"
         ],
-        "grammars": [
-            {
-                "language": "perl+mojolicious",
-                "scopeName": "source.perl.mojolicious",
-                "path": "./syntaxes/Perl+Mojolicious.tmLanguage"
-            },
-            {
-                "language": "mojolicious",
-                "scopeName": "text.html.mojolicious",
-                "path": "./syntaxes/Mojolicious.tmLanguage"
-            }
-        ]
-    },
-    "dependencies": {
-    }
+        "extensions": [
+          ".ep",
+          ".epl"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "mojolicious",
+        "aliases": [
+          "Mojolicious",
+          "ep",
+          "epl"
+        ],
+        "extensions": [
+          ".ep",
+          ".epl",
+          ".html.ep",
+          ".html.epl"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "perl+mojolicious",
+        "scopeName": "source.perl.mojolicious",
+        "path": "./syntaxes/Perl+Mojolicious.tmLanguage"
+      },
+      {
+        "language": "mojolicious",
+        "scopeName": "text.html.mojolicious",
+        "path": "./syntaxes/Mojolicious.tmLanguage",
+        "embeddedLanguages": {
+          "text.html.basic": "html"
+        }
+      }
+    ]
+  },
+  "dependencies": {}
 }
